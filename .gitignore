@@ -1,16 +1,23 @@
-include <iostream>
+#include <conio.h>
+#include <iostream>
+
 using namespace std;
 
-int main()
+void main()
 {
-    int a,b;
-    cin >> a >> b;
+    int a, b;
 
-    if (a == b)
-        cout << "=";
-    else if (a > b)
-        cout << "a";
-    else cout << "b";
+    cout << "Введите числа: ";
+    cin >> a, b;
 
-    system("pause");
+    if (a > b)
+        cout << a;
+
+    else if (b > a)
+    {
+        cout << b;
+        _getch();
+    }
+
+    _getch();
 }
