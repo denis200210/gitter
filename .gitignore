@@ -1,23 +1,38 @@
-#include <conio.h>
-#include <iostream>
+@ -1,5 +1,33 @@
+# Object file
+*.o
 
-using namespace std;
+# Ada Library Information
+*.ali
+# Created by https://www.toptal.com/developers/gitignore/api/osx
+# Edit at https://www.toptal.com/developers/gitignore?templates=osx
 
-void main()
-{
-    int a, b;
+### OSX ###
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
 
-    cout << "Введите числа: ";
-    cin >> a, b;
+# Icon must end with two \r
+Icon
 
-    if (a > b)
-        cout << a;
+# Thumbnails
+._*
 
-    else if (b > a)
-    {
-        cout << b;
-        _getch();
-    }
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
 
-    _getch();
-}
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# End of https://www.toptal.com/developers/gitignore/api/osxv
